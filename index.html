@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Orbitron:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <section id="calculator-app">
+        <div class="calculator-title">
+            <h1></h1>
+        </div>
+        <form>
+            <input type="text" class="result-screen" value="0" readonly />
+        </form>
+        <div class="buttons-container">
+            <button type="button" class="btn btn-red" data-digit="+">+</button>
+            <button type="button" class="btn btn-red" data-digit="-">-</button>
+            <button type="button" class="btn btn-red" data-digit="*">*</button>
+            <button type="button" class="btn btn-red" data-digit="/">/</button>
+
+            <button type="button" class="btn btn-blue" data-digit="9">9</button>
+            <button type="button" class="btn btn-blue" data-digit="8">8</button>
+            <button type="button" class="btn btn-blue" data-digit="7">7</button>
+            <button type="button" class="btn btn-blue" data-digit="6">6</button>
+            <button type="button" class="btn btn-blue" data-digit="5">5</button>
+            <button type="button" class="btn btn-blue" data-digit="4">4</button>
+            <button type="button" class="btn btn-blue" data-digit="3">3</button>
+            <button type="button" class="btn btn-blue" data-digit="2">2</button>
+            <button type="button" class="btn btn-blue" data-digit="1">1</button>
+            <button type="button" class="btn btn-blue" data-digit="0">0</button>
+            <button type="button" class="btn btn-blue" data-digit=".">.</button>
+            <button type="button" class="btn-green btn-equal">=</button>
+            <button type="button" class="btn-yellow btn-reset">C</button>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright"></p>
+        <p class="app-repository"></p>
+    </footer>
+<script src="src/app.js" type="module"></script>
+</body>
+</html>

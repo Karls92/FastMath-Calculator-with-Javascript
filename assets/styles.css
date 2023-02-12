@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    min-height: 100vh;
+    background-color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+#calculator-app {
+    background-color: #130F0F;
+    width: 300px;
+    height: 530px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, .5);
+    padding: 20px;
+}
+form {
+    margin: 10px 0;
+}
+form input {
+    width: 100%;
+    height: 100px;
+    border: 2px inset rgb(234, 233, 229);
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: right;
+    pointer-events: none;
+    font-family: 'Orbitron', sans-serif;
+}
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.buttons-container button {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    width: 60px;
+    height: 52px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+.buttons-container button:active {
+    transform: scale(0.7);
+}
+.buttons-container button.btn-red {
+    background-color: rgb(164, 22, 0);
+    box-shadow: 1px 1px 12px rgba(164, 22, 0, .7);
+}
+.buttons-container button.btn-blue {
+    background-color: rgb(3, 64, 146);
+    box-shadow: 1px 1px 12px rgba(3, 64, 146, .7);
+}
+.buttons-container button.btn-green {
+    background-color: rgb(18, 173, 77);
+    box-shadow: 1px 1px 12px rgba(18, 173, 77, .7);
+}
+.buttons-container button.btn-yellow {
+    background-color: rgb(218, 202, 8);
+    box-shadow: 1px 1px 12px rgba(218, 202, 8, .7);
+}
+.calculator-title h1 {
+    width: 100%;
+    text-align: right;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: rgb(164, 22, 0);
+    text-shadow: 0 0 10px rgb(255, 255, 246);
+}
+footer {
+    padding: 40px 0 20px 0;
+}
+footer .copyright, 
+footer .app-repository {
+    font-size: 1.2rem;
+    color:rgb(69, 69, 69);
+    text-align: center;
+}
+footer .copyright a {
+    color:rgb(164, 22, 0);
+}
+footer .app-repository a {
+    color: rgba(0, 0, 0, .5);
+}
